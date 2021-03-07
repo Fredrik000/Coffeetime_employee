@@ -1,0 +1,114 @@
+.order-wrapper {
+  width: 375px;
+  height: 604px;
+  position: absolute;
+  left: 32%;
+  background-color: white;
+  z-index: 2;
+  border: 1px solid black;
+
+  .item-component-order {
+    display: flex;
+
+    align-items: center;
+    height: 20%;
+
+    img {
+      height: 100px;
+      width: auto;
+      padding-left: 40px;
+      padding-right: 30px;
+    }
+  }
+}
+
+.options {
+  height: 70%;
+}
+
+// Header bar for options and total
+.options-header {
+  display: inline-block;
+  background-color: $contrast-color;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 5vh;
+
+  h3 {
+    height: 100%;
+    padding-top: 5px;
+  }
+}
+
+// Size options styling
+.choose-size {
+  margin: 5px;
+  height: 33%;
+
+  li {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+
+  .item-price {
+    justify-self: center;
+  }
+}
+
+// Extra options styling
+.choose-extra {
+  margin: 5px;
+  height: 33%;
+
+  li {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .extra-price {
+    justify-self: center;
+    grid-column: 3;
+  }
+}
+
+// Checkbox styling
+.checkbox-wrapper {
+  cursor: pointer;
+  grid-column: 4;
+  justify-self: end;
+  margin-right: 25px;
+
+  input {
+    &:checked ~ .checkmark {
+      background-color: $contrast-color;
+    }
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid $contrast-color;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color 0.2s;
+  }
+}

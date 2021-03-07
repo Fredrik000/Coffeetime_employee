@@ -1,0 +1,109 @@
+.order-details-wrapper {
+  height: 100%;
+}
+
+.order-details-ul,
+.order-history-ul {
+  overflow-y: scroll;
+  list-style-type: none;
+  height: 80%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.order-history-li,
+.order-details-li {
+  display: grid;
+  padding: 10px;
+  align-items: center;
+}
+
+.order-history-li {
+  grid-template-columns: repeat(4, 1fr);
+
+  .order-history-date {
+    justify-self: center;
+  }
+
+  .order-history-price {
+    justify-self: center;
+  }
+
+  button {
+    width: 50%;
+    justify-self: end;
+    border: 1px solid black;
+    color: white;
+    background-color: $contrast-color;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+// Order history header
+.li-header {
+  font-weight: 700;
+
+  button {
+    display: none;
+  }
+}
+
+// Order details
+.order-details-li-wrapper {
+  margin-top: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $opacity-contrast-color;
+  font-weight: 700;
+  border: 1px solid $contrast-color;
+
+  li {
+    box-shadow: none;
+  }
+}
+
+.order-details-ul {
+  .order-details-li {
+    grid-template-columns: repeat(3, 1fr);
+
+    .order-details-name {
+      justify-self: start;
+    }
+
+    .order-details-amount {
+      justify-self: center;
+    }
+
+    .order-details-price {
+      justify-self: end;
+    }
+  }
+}
+
+.order-details-actions-wrapper {
+  display: flex;
+  height: 100px;
+  position: sticky;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    height: 45px;
+    width: 250px;
+    font-size: 28px;
+  }
+
+  .order-details-actions-delete-btn {
+    background-color: white;
+    border: 1px solid;
+  }
+
+  .order-details-actions-print-btn {
+    background-color: $contrast-color;
+    border: 1px solid $contrast-color;
+    color: white;
+  }
+}

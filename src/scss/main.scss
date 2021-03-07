@@ -1,0 +1,54 @@
+@import "config";
+@import "item";
+@import "navbar";
+@import "options";
+@import "shoppingcart";
+@import "order";
+@import "welcome";
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-weight: normal;
+}
+
+li {
+  box-shadow: inset 0 -4px 2px -2px $opacity-contrast-color;
+  padding: 5px;
+}
+
+h1 {
+  color: white;
+  text-decoration: underline;
+  font-family: "Piazzolla", serif;
+}
+
+h2 {
+  font-family: "Piazzolla", serif;
+}
+
+h3 {
+  color: white;
+  font-family: "Piazzolla", serif;
+}
+
+p {
+  font-family: "Piazzolla", serif;
+}
+
+button {
+  font-family: "Piazzolla", serif;
+}
+
+.page-header {
+  margin: 20px;
+  margin-left: 30px;
+}

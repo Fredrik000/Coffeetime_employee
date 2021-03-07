@@ -1,0 +1,59 @@
+.item-list-wrapper {
+  height: 100vh;
+}
+
+.item-component-ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow-y: scroll;
+  list-style-type: none;
+  margin: 5px;
+  height: 85vh;
+}
+
+.item-component {
+  text-align: center;
+  background-color: $light-contrast-color;
+  margin: 5px;
+  padding-top: 30%;
+
+  h3 {
+    color: black;
+  }
+
+  .item-img {
+    grid-column: 1;
+    grid-row: 1/3;
+    height: 100px;
+    width: auto;
+  }
+
+  .item-name {
+    grid-column: 2/4;
+    grid-row: 1;
+    padding-bottom: 25px;
+  }
+
+  .item-price {
+    grid-column: 2;
+    grid-row: 2;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $underline-color;
+  }
+
+  .item-add {
+    grid-column: 3;
+    grid-row: 2;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $underline-color;
+  }
+}
+
+.item-component-empty {
+  text-align: center;
+  align-items: center;
+  background-color: $light-contrast-color;
+  margin: 5px;
+  padding-top: 30%;
+  opacity: 50%;
+}

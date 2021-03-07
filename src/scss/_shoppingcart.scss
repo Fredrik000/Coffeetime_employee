@@ -1,0 +1,99 @@
+.shoppingcart-wrapper {
+  height: 100%;
+}
+
+// Size options styling
+.shoppingcart-ul {
+  overflow-y: scroll;
+  list-style-type: none;
+  height: 60%;
+  margin-right: 30px;
+  margin-left: 30px;
+
+  li {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 10px;
+
+    button {
+      border: none;
+      height: 100%;
+      background-color: white;
+      font-weight: 700;
+    }
+  }
+
+  .shoppingcart-li-name {
+    justify-self: start;
+  }
+
+  .shoppingcart-li-amount {
+    justify-self: start;
+  }
+
+  .shoppingcart-li-price {
+    justify-self: center;
+  }
+
+  .shoppingcart-li-remove-btn {
+    justify-self: end;
+  }
+
+  .order-details-name {
+    justify-self: start;
+  }
+
+  .order-details-amount {
+    justify-self: start;
+  }
+
+  .order-details-price {
+    justify-self: center;
+  }
+}
+
+.shoppingcart-footer-wrapper {
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+
+  .shoppingcart-footer-pay-options {
+    display: flex;
+    height: 50%;
+    position: sticky;
+    bottom: 12%;
+    justify-content: center;
+  }
+
+  button {
+    height: 45px;
+    width: 250px;
+    font-size: 28px;
+    background-color: white;
+    border: 1px solid $contrast-color;
+  }
+
+  .shoppingcart-card-btn {
+    background-color: $contrast-color;
+    color: white;
+  }
+}
+
+.shoppingcart-footer-add-order-wrapper {
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: $contrast-color;
+
+  button {
+    height: 55px;
+    width: 350px;
+    font-size: 28px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+}
